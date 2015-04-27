@@ -48,7 +48,7 @@ The implementation and details of the special milestone is as follows:
 
 * The proxy server has the implementation for resilience testing. We are maintaining a list of active servers in an arraylist and before accepting any request, the proxy server removes a server instance randomly from the list before accepting any request. This stops the traffic flow to that one instance. The incoming requests are distributed among the left servers. At the end, the removed server is put back into the pool of active servers. This is analogous to the chaos monkey situation where abruptly a server is terminated. The requests are transferred in such a way that the canary release gets 10% of the users and rest of the servers receive the left requests in balance. The code for the same resides in src/Main/java/servlet/HelloServlet.java. 
 
-This way the behavior of the system can be checked if the a few servers go down. 
+This way the behavior of the system can be checked if a few servers go down. 
 
 The requests are redirected to the servers by proxy server as below:
 
@@ -78,3 +78,4 @@ And the performance stats is as follows obtained on stopping siege:
 
 ![siege stats](https://github.com/mahasanath/Milestone4/blob/master/siege%20after.png)
 
+14 out of 20 requests were peacefully handled but then all the three servers went out and as the servers were being put back to the array list, a few more requests were handled in between. 
