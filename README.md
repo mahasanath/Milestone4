@@ -23,9 +23,9 @@ On executing runDeployment.sh, we get the following:
 
 The active servers where the application is deployed are:
 
- [Canary2] 54.148.105.208:54321
- [Production] 54.201.118.4:54321
- [Canary4] 54.201.44.79:54321 (Another server)
+     [Canary2] 54.148.105.208:54321
+     [Production] 54.201.118.4:54321
+     [Canary4] 54.201.44.79:54321 (Another server)
 
 
 * A proxy server is running on the server that deploys the application. The server maintains a list of active servers that will handle the user requests. The proxy server can be run by using the command below. Go into proxy folder and the run the command.
