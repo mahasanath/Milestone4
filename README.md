@@ -32,6 +32,8 @@ sh target/bin/webapp
 
 The proxy server is running on 54.148.145.59:7878.
 
+![proxy server](https://github.com/mahasanath/Milestone4/blob/master/proxy.png)
+
 
 ####Special Milestone explained
 -------------------------------
@@ -46,11 +48,11 @@ This way the behavior of the system can be checked if the a few servers go down.
 
 The requests are redirected to the servers by proxy server as below:
 
-![Canary]()
+![Canary](https://github.com/mahasanath/Milestone4/blob/master/Canary_resilience.png)
 
-![Production 1]()
+![Production 1](https://github.com/mahasanath/Milestone4/blob/master/ProductionResilience.png)
 
-![Production 2]() 
+![Production 2](https://github.com/mahasanath/Milestone4/blob/master/server3.png) 
 
 * In order to test this setup, we have used 'Siege' which is a  multi-threaded http load tester (Reference: http://linux.die.net/man/1/siege). It shows various performance measures like availability, throughput, transaction rate, etc. It generated user requests and bombards the provided url. The command for the same is given as below:
 
@@ -62,12 +64,13 @@ Here d is the time between two consecutive requests and c is the number of reque
 
 On starting siege, one gets the following:
 
-![siege]()
+![siege](https://github.com/mahasanath/Milestone4/blob/master/siege.png)
 
 The output I received was as below. The first line is number of servers active and second line is the server removed for testing reason:
 
+![siege console](https://github.com/mahasanath/Milestone4/blob/master/siege%20before.png)
 
 And the performance stats is as follows obtained on stopping siege:
 
-
+![siege stats](https://github.com/mahasanath/Milestone4/blob/master/siege%20after.png)
 
