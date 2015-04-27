@@ -57,6 +57,9 @@ The requests are redirected to the servers by proxy server as below:
 ```bash
 siege -d10 -c20 http://54.148.145.59:7878/hello
 ```
+Here d is the time between two consecutive requests and c is the number of requests generated.
+
+
 On starting siege, one gets the following:
 
 ![siege]()
