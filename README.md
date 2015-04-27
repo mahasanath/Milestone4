@@ -28,7 +28,7 @@ The active servers where the application is deployed are:
      [Canary4] 54.201.44.79:54321 (Another server)
 
 
-* A proxy server is running on the server that deploys the application. The server maintains a list of active servers that will handle the user requests. The proxy server can be run by using the command below. Go into proxy folder and the run the command.
+* A proxy server is running that deploys the application. The server maintains a list of active servers that will handle the user requests. The proxy server can be run by using the command below. Go into proxy folder and run the following command.
 
  ```bash
 sh target/bin/webapp
