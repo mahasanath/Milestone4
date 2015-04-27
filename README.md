@@ -15,7 +15,11 @@ We aim to introduce resilience testing in our system. The setup and method is ex
 
 On executing runCanary.sh, we get the following:
 
-![canary]()
+![canary](https://github.com/mahasanath/Milestone4/blob/master/runCanary.png)
+
+On executing runDeployment.sh, we get the following:
+
+![Production](https://github.com/mahasanath/Milestone4/blob/master/runDeployment.png)
 
 The active servers where the application is deployed are:
 
