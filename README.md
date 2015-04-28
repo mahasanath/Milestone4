@@ -79,3 +79,7 @@ And the performance stats is as follows obtained on stopping siege:
 ![siege stats](https://github.com/mahasanath/Milestone4/blob/master/siege%20after.png)
 
 14 out of 20 requests were peacefully handled but then all the three servers went out and as the servers were being put back to the array list, a few more requests were handled in between. 
+
+
+Link to the video:
+https://www.youtube.com/watch?v=M54yLmG9hPc
